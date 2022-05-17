@@ -1,0 +1,13 @@
+{
+    "store.custom#exemplo01": {
+        "children":[
+            "image#test"
+        ]
+    },
+    
+    "image#test":{
+        "props":{
+        "src": "assets/png/pirarara.jpg"
+        }
+    }
+}
