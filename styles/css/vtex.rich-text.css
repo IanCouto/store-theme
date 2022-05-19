@@ -67,6 +67,14 @@
   font-weight: 700;
 }
 
+.container--subtitle{
+  color: #03034E;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: underline;
+}
+
 @media only screen and (min-width: 640px) {
   .container--question .strong {
     font-size: 40px;

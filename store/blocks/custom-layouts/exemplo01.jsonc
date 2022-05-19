@@ -1,13 +1,233 @@
 {
     "store.custom#exemplo01": {
         "children":[
-            "image#test"
+            //TAB
+            "tab-layout#home",
+
+            //VIDEO
+            "video#pagode"
         ]
     },
-    
-    "image#test":{
+
+    "tab-layout#home":{
+        "children":[
+            "tab-list#custom01",
+            "tab-content#custom01"
+        ],
         "props":{
-        "src": "assets/png/pirarara.jpg"
+            "blockClass":"home",
+            "defaultActiveTabId":"summer" 
+        }
+    },
+
+    "tab-list#custom01":{
+        "children":[
+            "tab-list.item#custom01-1",
+            "tab-list.item#custom01-2"
+        ]
+    },
+
+    "tab-list.item#custom01-1":{
+        "props":{
+            "tabId":"summer",
+            "label":"summer"
+        }
+    },
+
+    "tab-list.item#custom01-2":{
+        "props":{
+            "tabId":"winter",
+            "label":"winter"
+        }
+    },
+
+    "tab-content#custom01":{
+        "children":[
+            "tab-content.item#custom01-1",
+            "tab-content.item#custom01-2"
+        ]
+    },
+
+    "tab-content.item#custom01-1":{
+        "children":[
+            "flex-layout.row#summer-images"
+        ],
+        "props":{
+            "tabId":"summer"
+        }
+    },
+
+    "tab-content.item#custom01-2":{
+        "children":[
+            "flex-layout.row#winter-images"
+        ],
+        "props":{
+            "tabId":"winter"
+        }
+    },
+
+    "flex-layout.row#summer-images": {
+        "children":[
+            "flex-layout.col#summer1",
+            "flex-layout.col#summer2",
+            "flex-layout.col#summer3"
+        ]
+    },
+
+
+    "flex-layout.row#winter-images": {
+        "children":[
+            "flex-layout.col#winter1",
+            "flex-layout.col#winter2",
+            "flex-layout.col#winter3"
+        ]
+       
+    },
+
+    "flex-layout.col#summer1": {
+        "children":[
+            "image#summer1",
+            "rich-text#summer-type",
+            "rich-text#summer-description"    
+        ],
+        "props":{
+            "blockClass": "tab-margin",
+            "marginLeft": "3",
+            "marginRight": "3"
+        }
+    },
+
+    "flex-layout.col#summer2": {
+        "children":[
+            "image#summer2",
+            "rich-text#summer-type",
+            "rich-text#summer-description"    
+        ],
+        "props":{
+            "blockClass": "tab-margin",
+            "marginLeft": "3",
+            "marginRight": "3"
+        }
+    },
+
+    "flex-layout.col#summer3": {
+        "children":[
+            "image#summer3",
+            "rich-text#summer-type",
+            "rich-text#summer-description"   
+             
+        ],
+        "props":{
+            "blockClass": "tab-margin",
+            "marginLeft": "3",
+            "marginRight": "3"
+        }
+    },
+
+    "flex-layout.col#winter1": {
+        "children":[
+            "image#winter1",
+            "rich-text#summer-type",
+            "rich-text#summer-description"    
+        ],
+        "props":{
+            "blockClass": "tab-margin"
+        }
+    },
+
+    "flex-layout.col#winter2": {
+        "children":[
+            "image#winter2",
+            "rich-text#summer-type",
+            "rich-text#summer-description"    
+        ],
+        "props":{
+            "blockClass": "tab-margin"
+        }
+    },
+
+    "flex-layout.col#winter3": {
+        "children":[
+            "image#winter3",
+            "rich-text#summer-type",
+            "rich-text#summer-description"    
+        ],
+        "props":{
+            "blockClass": "tab-margin"
+        }
+    },
+    
+
+    "image#summer1":{
+        "props":{
+        "src": "assets/summer/summer 1.jpg",
+        "height": "600px",
+        "width": "1000px"
+        }
+    },
+
+    "image#summer2":{
+        "props":{
+        "src": "assets/summer/summer 2.jpg",
+        "height": "600px",
+        "width": "1000px"
+        }
+    },
+
+    "image#summer3":{
+        "props":{
+        "src": "assets/summer/summer 3.jpg",
+        "height": "600px",
+        "width": "1000px"
+        }
+    },
+
+    "image#winter1":{
+        "props":{
+        "src": "assets/winter/winter 1.jpg",
+        "maxHeight": "600px",
+        "maxWidth": "600px"
+        }
+    },
+
+    "image#winter2":{
+        "props":{
+        "src": "assets/winter/winter 2.jpg",
+        "maxHeight": "600px",
+        "maxWidth": "400px"
+        }
+    },
+
+    "image#winter3":{
+        "props":{
+        "src": "assets/winter/winter 3.jpg",
+        "maxHeight": "600px",
+        "maxWidth": "400px"
+        }
+    },
+
+    "rich-text#summer-type":{
+        "props":{
+            "text": "Teste",
+            "blockClass": "subtitle"
+        }
+    },
+
+    "rich-text#summer-description":{
+        "props":{
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt,sem a facilisis facilisis, mauris sapien hendrerit neque, pellentesque gravida eros dolor non sem. Ut in arcu ut mi facilisis sodales."
+        }
+    },
+
+    "video#pagode":{
+        "props":{
+            "width": "100%",
+            "height": "100%",
+            "loop": true,
+            "autoPlay": true,
+            "muted": true,
+            "src": "https://www.youtube.com/watch?v=zKAAFsovtM4",
+            "blockClass": "videoEl"
         }
     }
 }
