@@ -66,7 +66,8 @@
     "vtex.css-handles": "1.x"
   },
   "peerDependencies": {
-    "vtex.reviews-and-ratings": "2.x"
+    "vtex.reviews-and-ratings": "2.x",
+    "logicinfopartnerbr.countdown": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
