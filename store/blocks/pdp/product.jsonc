@@ -110,6 +110,8 @@
       "product-quantity",
       "product-assembly-options",
       "product-gifts",
+      "countdown.title",
+      "countdown",
       "flex-layout.row#buy-button",
       "availability-subscriber",
       "shipping-simulator",
@@ -160,6 +162,8 @@
     "children": [
       "flex-layout.row#product-name",
       "product-identifier.product",
+      "countdown.title",
+      "countdown",
       "sku-selector",
       "flex-layout.row#availability"
     ]
